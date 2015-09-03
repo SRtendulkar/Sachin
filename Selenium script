@@ -22,6 +22,7 @@ public class Dataprovidertest {
 		d.get("http://apps.vedasemantics.com/discovery");
 		d.manage().window().maximize();
 		d.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
+		// user names
 		d.findElement(By.id("userId")).sendKeys(UN);
 		d.findElement(By.id("password")).sendKeys(PS);
 		d.findElement(By.cssSelector("input.btn-button.width100")).click();
